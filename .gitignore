@@ -66,3 +66,5 @@ Mountains/Logs/
 Mountains/Library/
 
 Mountains/.vsconfig
+
+*.meta
