@@ -27,7 +27,7 @@ namespace AmplifyAnimationPack
 			else
 			{
 				Debug.LogError( "INVALID BAR" );
-				charRef.ChangeState<FallingState>();
+			charRef.ChangeState<FallingState>();
 				return;
 			}
 

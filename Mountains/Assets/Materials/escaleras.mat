@@ -39,11 +39,19 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmmisTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: fd8cbafccbb610e478ca6aecd4c8cf94, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -56,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AmbientCol: 0
+    - _AmbientCol: 1
     - _BumpScale: 1
     - _Clipped: 0
     - _ColBright: 0
@@ -64,9 +72,15 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FresnelBrightness: 0
+    - _FresnelPower: 0
+    - _FresnelShadowDropoff: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 0
+    - _HighIntensity: 1.5
+    - _LightScalar: 1
+    - _LowIntensity: 1
     - _Lumin: 1.94
     - _MaxLight: 1
     - _Metallic: 0
@@ -75,7 +89,12 @@ Material:
     - _OcclusionStrength: 1
     - _Offset: 0
     - _OtlWidth: 5
+    - _OutlineSize: 10
     - _Parallax: 0.02
+    - _RampLevels: 2
+    - _RimAlpha: 0
+    - _RimDropOff: 0
+    - _RimPower: 0
     - _Segmented: 1
     - _ShnIntense: 0
     - _ShnOverlap: 0
@@ -91,6 +110,11 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
     - _OtlColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []

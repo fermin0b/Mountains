@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2331142999351281471
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.51
+  threshold:
+    overrideState: 0
+    value: 1
+  softKnee:
+    overrideState: 0
+    value: 0.5
+  clamp:
+    overrideState: 0
+    value: 65472
+  diffusion:
+    overrideState: 0
+    value: 7
+  anamorphicRatio:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0.6509434, g: 0.37238798, b: 0.20572266, a: 1}
+  fastMode:
+    overrideState: 0
+    value: 0
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
+    value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +64,8 @@ MonoBehaviour:
   - {fileID: 114932088620658166}
   - {fileID: 114702306253313022}
   - {fileID: 114033244298132014}
+  - {fileID: -2331142999351281471}
+  - {fileID: 8542857798178025173}
 --- !u!114 &114033244298132014
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -29,19 +78,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   focusDistance:
     overrideState: 1
-    value: 2.7
+    value: 3.72
   aperture:
     overrideState: 1
-    value: 7
+    value: 8.54
   focalLength:
     overrideState: 1
-    value: 50
+    value: 52.23
   kernelSize:
     overrideState: 1
     value: 1
@@ -66,7 +115,7 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 0.49
+    value: 1
   color:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -106,19 +155,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
   m_Name: AutoExposure
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 50, y: 95}
+    value: {x: 1, y: 45.999992}
   minLuminance:
     overrideState: 1
-    value: -0.91
+    value: 0.58
   maxLuminance:
     overrideState: 1
-    value: 4.82
+    value: 3.79
   keyValue:
     overrideState: 1
     value: 1.18
@@ -211,10 +260,10 @@ MonoBehaviour:
     value: 100
   mixerRedOutGreenIn:
     overrideState: 1
-    value: 0
+    value: -21
   mixerRedOutBlueIn:
     overrideState: 1
-    value: 0
+    value: 11
   mixerGreenOutRedIn:
     overrideState: 1
     value: 0
@@ -235,13 +284,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: -0.077922076}
+    value: {x: 1, y: 0.85628134, z: 0.89360607, w: -0.08997429}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 0.9785178, y: 1, z: 0.96802, w: 0.03856051}
   gain:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 1, y: 1, z: 1, w: -0.012853477}
   masterCurve:
     overrideState: 1
     value:
@@ -883,7 +932,16 @@ MonoBehaviour:
     value:
       curve:
         serializedVersion: 2
-        m_Curve: []
+        m_Curve:
+        - serializedVersion: 3
+          time: 0.0037037036
+          value: 0.49615383
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -891,134 +949,134 @@ MonoBehaviour:
       m_ZeroValue: 0.5
       m_Range: 1
       cachedData:
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
-      - 0.5
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
+      - 0.49615383
   hueVsSatCurve:
     overrideState: 1
     value:
@@ -1442,3 +1500,25 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
+--- !u!114 &8542857798178025173
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 1
+    value: 158
+  sampleCount:
+    overrideState: 1
+    value: 15

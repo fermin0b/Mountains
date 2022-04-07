@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: muro
-  m_Shader: {fileID: 4800000, guid: 7cd5de0b884b14f88ab763ef465e1799, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9e0b78a84584ffb4b9d963b4c6f26436, type: 3}
   m_ShaderKeywords: _EMISSION _GLOSSYREFLECTIONS_OFF _SEGMENTED_ON _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
     _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 1
@@ -45,9 +45,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 651033ca84bf80e4da1b8c533a2a4310, type: 3}
+        m_Texture: {fileID: 2800000, guid: 02f28231f80ca14408a59b6f0c8ce8e9, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0.03, y: -0.06}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -65,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AmbientCol: 0.265
+    - _AmbientCol: 1
     - _BumpScale: 1
     - _Clipped: 0
     - _ColBright: 0
@@ -79,13 +79,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HighIntensity: 0.62
+    - _HighIntensity: 0
     - _LightScalar: 0
     - _LowIntensity: 0.67
-    - _Lumin: 2
-    - _MaxLight: 1
+    - _Lumin: 0
+    - _MaxLight: 0.511
     - _Metallic: 1
-    - _MinLight: 1
+    - _MinLight: 0.654
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
@@ -112,10 +112,10 @@ Material:
     - _Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HighColor: {r: 0.19339621, g: 0.6704887, b: 1, a: 1}
     - _LowColor: {r: 1, g: 1, b: 1, a: 1}
     - _OtlColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
+    - _ShnColor: {r: 0, g: 0.6194389, b: 1, a: 1}
   m_BuildTextureStacks: []
