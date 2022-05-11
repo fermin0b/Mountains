@@ -72,3 +72,7 @@ Mountains/.vsconfig
 Mountains2.0/Library/
 
 Mountains2.0/Temp/
+
+Mountains2.0/obj/
+
+Mountains2.0/Logs/
