@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/puta basura/Climbing System/Scene/25D Demo Scene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
